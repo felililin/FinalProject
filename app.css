@@ -1,0 +1,37 @@
+body {
+  font-family: "Gabriola", sans-serif;
+}
+
+nav {
+  font-size: 1.5rem;
+}
+
+.carousel-item {
+  height: 32rem;
+  background: #777;
+  font-size: 3rem;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+  /* font-family: ; */
+}
+
+.overlay-image {
+  position: absolute;
+  height: 32rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+}

@@ -1,0 +1,41 @@
+<html>
+<title>Cave Cafe's Menu</title>
+<%- include('../template/header.html'); %>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <body>
+    <section class="container-fluid">
+      <div class="row justify-content-center">
+        <h1 class="text-center">MENU</h1>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-lg-3">
+          <h3 class="text-center" id="selectionAll" style="cursor:pointer;">All</h3>
+        </div>
+
+        <div class="col-lg-3">
+          <h3 class="text-center" id="selectionDrink" style="cursor:pointer;">Drink</h3>
+        </div>
+        <div class="col-lg-3">
+          <h3 class="text-center" id="selectionBean" style="cursor:pointer;">Bean</h3>
+        </div>
+        <div class="col-lg-3">
+
+          <h3 class="text-center" id="selectionMerch" style="cursor:pointer;">Merch</h3>
+
+        </div>
+    </section>
+
+    <div id="products">
+
+    </div>
+
+    <script src="js/menu.js"></script>
+  </body>
+  <%- include('../template/footer.html'); %>
+
+</html>

@@ -1,0 +1,73 @@
+<html>
+<style>
+  p {
+    font-size: large;
+  }
+</style>
+<title>About Cave Cafe</title>
+<%- include('../template/header.html'); %>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <body>
+    <section class="container-fluid">
+      <div class="row justify-content-center align-items-center d-none d-lg-inline px-0" style="text-align: center">
+        <h1 class="text-center">ABOUT</h1>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <div class="row justify-content-center px-0">
+        <div class="col-lg-6 align-items-center content">
+          <h1 class="text-center">OUR BEGINNING</h1>
+          <p class="text-center">
+            Cave Cafe is a coffee shop that is established by two Indonesians in
+            2021.
+          </p>
+        </div>
+        <div class="col-lg-6 content">
+          <img src="images/coffeeShop.jpg" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <div class="row justify-content-center align-items-center px-0">
+        <div class="col-lg-6 order-1 order-lg-2 content">
+          <h1 class="text-center">BACKGROUND</h1>
+          <p class="text-center">
+            From the early age, both founders have already developed their
+            interests towards coffee even way before they have known each other.
+            Even though the beginning is started with huge rough amount of
+            challenges, but the huge urge and determination keep both of the
+            founders going ahead to pursue their drreams, which is establishing
+            a new coffee shop.
+          </p>
+        </div>
+        <div class="col-lg-6 order-2 order-lg-1 content">
+          <img src="images/baristas.jpg" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <div class="row justify-content-center align-items-center px-0">
+        <div class="col-lg-6 content" style="text-align: center">
+          <h1 class="text-center">LOCATION</h1>
+          <p class="text-center">402台中市南區興大路145號</p>
+          <p class="text-center">
+            No. 145號, Xingda Rd, South District, Taichung City, 402
+          </p>
+          <button
+            onclick="window.location.href='https://www.google.com/maps/place/National+Chung+Hsing+University/@24.1227129,120.6753028,17z/data=!4m5!3m4!1s0x34693cfcecffe9d9:0xe28afadc0dad203a!8m2!3d24.123552!4d120.675326';">Find
+            Me!</button>
+        </div>
+        <div class="col-lg-6 content">
+          <img src="images/coffeePlate.jpg" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="js/app.js"></script>
+  <%- include('../template/footer.html'); %>
+
+</html>

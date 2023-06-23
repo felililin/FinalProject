@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../template/header.html'); %>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Account Page</title>
+        <link rel="stylesheet" href="css/accountCart.css">
+    </head>
+
+    <body>
+        <style>
+            #links {
+                color: #593e2c;
+                font-size: large;
+            }
+
+            #links:hover {
+                color: #c7976f;
+            }
+        </style>
+
+        <div class="container-fluid">
+            <h1>Account Information</h1>
+            <div class="row">
+                <!-- User info -->
+                <div class="column-25">
+                    <div class="row">
+                        <div class="column-33">
+                            <img src="images/latte.jpg" alt="" style="border-radius: 50%;">
+                        </div>
+                        <div class="column-66" style="text-align: left;">
+                            <h1 id="user_name">nama user</h1>
+                            <span id="user_email"></span><br>
+                            <a id="links" href="set-address" style="text-align: left;">Set Address</a><br>
+                            <a id="links" href="change-password" style="text-align: left;">Change Password</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Purchase info -->
+                <div class="column-75">
+                    <div class="col">
+                        <br>
+                        <h1>Purchases List</h1>
+                        <br>
+                        <div id="currentPurchaseContainer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/app.js"></script>
+        <script src="js/account.js"></script>
+    </body>
+    <%- include('../template/footer.html'); %>
+
+</html>

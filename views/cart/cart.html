@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <%- include('../template/header.html'); %>
+        <link rel="stylesheet" href="css/accountCart.css">
+</head>
+
+<body>
+    <style>
+        .selectPickup {
+            font-size: 22px;
+            font-weight: 700;
+            color: #202020;
+        }
+    </style>
+    <div class="container">
+        <div class=”Header”>
+            <h1 class=”Heading” style="text-align: center;">Shopping Cart</h1>
+            <h5 onclick="clearCart()" class=”Action” style="text-align: end; 
+                   text-decoration: underline; 
+                   color: #e44c4c; 
+                   cursor: pointer;">
+                Remove all</h5>
+        </div>
+        <div class="card">
+            <div class="container" id="cartContainer">
+            </div>
+            <hr>
+            <div class="selectPickup">
+                <label for="pickup">Do you want your order to be delivered/picked up by yourself?</label><br>
+                <input type="radio" id="delivery" name="pickup" value="delivery">
+                <label for="delivery"> I want it to be delivered!</label><br>
+                <input type="radio" id="selfPickup" name="pickup" value="selfPickup">
+                <label for="selfPickup"> I want to pick it up by myself</label>
+            </div>
+            <div class="checkout">
+                <div class="total">
+                    <div>
+                        <div class="Subtotal">Sub-Total</div>
+                        <div class="items" id="cartTotalItems">0 items</div>
+                    </div>
+                    <div class="total-amount" id="cartTotalAmount">$0.00</div>
+                </div>
+                <button class="btn btn-primary" id="checkoutButton" onclick="checkout()">Checkout</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="js/cart.js"></script>
+<%- include('../template/footer.html'); %>
+
+</html>
